@@ -133,7 +133,34 @@ button[type="submit"]:hover {
   </div>
   <div class="form-group">
     <label for="campaign">Campaign</label>
-   <input type="text" id="campaign" name="campaign"><br>
+    <?php
+// Connect to the database
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "login";
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+// Check if the connection was successful
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+// Retrieve the campaign names from the database
+$sql = "SELECT name FROM campaigns";
+$result = mysqli_query($conn, $sql);
+
+// Create a dropdown list with the campaign names
+echo "<select name='campaign' required>";
+while ($row = mysqli_fetch_assoc($result)) {
+    echo "<option value='" . $row['name'] . "'>" . $row['name'] . "</option>";
+}
+echo "</select>";
+
+// Close the database connection
+mysqli_close($conn);
+?>	
   </div>
   <div class="form-group">
     <label for="email">Donation Date</label>
