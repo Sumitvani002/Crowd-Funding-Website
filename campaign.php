@@ -149,8 +149,8 @@
     </div>
 
     <div class="input-group mb-3">
-      <label class="input-group-text" for="inputGroupFile01" style="font-weight: bold;" >Upload Campaign Picture :</label>
-      <input type="file" class="form-control" name="campaign_picture" required>
+      <label class="input-group-text" for="inputGroupFile01" style="font-weight: bold;" >Upload Campaign Picture (PNG Format Only) :</label>
+      <input type="file" class="form-control" accept=".png" name="campaign_picture" required>
     </div>
 
 
@@ -177,8 +177,8 @@
   </div> -->
   <br> </br>
   <div class="input-group mb-3">
-    <label class="input-group-text" for="inputGroupFile01" style="font-weight: bold;" >Upload Documents</label>
-    <input type="file" class="form-control" name="documents" required>
+    <label class="input-group-text" for="inputGroupFile01" style="font-weight: bold;" >Upload Documents (PNG Format Only) </label>
+    <input type="file" class="form-control" accept=".png" name="documents" required>
   </div>
   <br> </br>
     <div class="col-12">
