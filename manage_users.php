@@ -64,7 +64,7 @@
         <ul>
           <li><a class="active" href="admin_dash.php">Home</a></li>
         
-          <li><a href="campaign-list1.php">List of Campaign</a></li>
+          <li><a href="admin_campaign-list1.php">List of Campaign</a></li>
           <li><a href="logout.php">Logout</a></li>
           <li><a href="#">/</a></li>
         </ul>
