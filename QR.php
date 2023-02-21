@@ -246,8 +246,8 @@ mysqli_close($conn);
 
   <label for="amount">Amount:</label>
   <input type="number" name="amount" required>
-  <label for="picture">Payment Screenshot:</label>
-  <input type="file" name="picture" required>
+  <label for="picture">Payment Screenshot (PNG Format Only) :</label>
+  <input type="file" accept=".png" name="picture" required>
   <br>
   <br>
   <!-- <input type="submit" value="Submit"> -->
